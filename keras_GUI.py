@@ -40,6 +40,11 @@ class MainApplication:
         probability = (list[0][0][2])*100
         return('{}: {:.2f}') .format(object, probability)
 
-root = Tk()
-my_gui = MainApplication(root)
-root.mainloop()
+def main():
+
+    root = Tk()
+    main_app = MainApplication(root)
+    root.mainloop()
+
+if __name__ == '__main__':
+    main()
